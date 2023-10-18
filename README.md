@@ -52,7 +52,7 @@ Here's a list of planned features and improvements for this project:
 
 Feel free to contribute or provide feedback on these planned features.
 
-_If you have any ideas for additional features or improvements, please [create an issue](https://github.com/your-project-repo/issues) or submit a pull request._
+_If you have any ideas for additional features or improvements, please [create an issue](https://github.com/ayobamiseun/custom-otp-input/) or submit a pull request._
 
 
 
