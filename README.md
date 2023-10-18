@@ -26,6 +26,36 @@ To use the OTPInput component, import it into your React application and integra
 - `width`: Customizes the width of the OTP input container.
 - `height`: Customizes the height of the OTP input fields.
 
+## Feature Roadmap
+
+Here's a list of planned features and improvements for this project:
+
+### 1. Auto Submission
+
+- **Description**: Implement auto-submission of the OTP after a certain time interval.
+- **Status**: Planned
+
+### 2. Countdown Timer
+
+- **Description**: Add a countdown timer to indicate the time remaining for OTP submission.
+- **Status**: Planned
+
+### 3. Error Messages
+
+- **Description**: Enhance error handling by displaying informative error messages.
+- **Status**: Planned
+
+### 4. Styling Enhancements
+
+- **Description**: Improve the overall visual design and user interface.
+- **Status**: Planned
+
+Feel free to contribute or provide feedback on these planned features.
+
+_If you have any ideas for additional features or improvements, please [create an issue](https://github.com/your-project-repo/issues) or submit a pull request._
+
+
+
 
 
 ## Author
