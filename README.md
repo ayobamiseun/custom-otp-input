@@ -1,28 +1,36 @@
-# React + TypeScript + Vite
+# React OTP Input Component 📦
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The React OTP Input component is a customizable input field for entering one-time passwords (OTP) in your React applications. It supports various customization options for input size, styling, and completion callback.
 
-Currently, two official plugins are available:
+## Installation 🚀
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To use this component in your React project, you can install it via npm or yarn:
 
-## Expanding the ESLint configuration
+```bash
+npm install react-otp-input
+yarn add react-otp-input
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
 ```
+## Usage
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
-# custom-otp-input
+To use the OTPInput component, import it into your React application and integrate it with your UI.
+
+#### Props
+
+##### The OTPInput component accepts the following props:
+
+- `size`: Specifies the number of input fields.
+- `inputStyle`: Customizes the style of individual input fields.
+- `onComplete`: Specifies a callback function to be called when the OTP is complete.
+- `containerStyle`: Customizes the style of the container div that holds the input fields.
+- `width`: Customizes the width of the OTP input container.
+- `height`: Customizes the height of the OTP input fields.
+
+
+
+## Author
+
+**Adegoke Ayobami**
+- GitHub: [github.com/ayobamiseun](https://github.com/ayobamiseun)
+
+Feel free to modify the README to suit your project's specific needs.
