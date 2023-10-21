@@ -60,7 +60,7 @@ _If you have any ideas for additional features or improvements, please [create a
 
 ## Author
 
-**Adegoke Ayobami**
+**Ayobami Adegoke**
 - GitHub: [github.com/ayobamiseun](https://github.com/ayobamiseun)
 
 Feel free to modify the README to suit your project's specific needs.
