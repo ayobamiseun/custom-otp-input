@@ -17,14 +17,15 @@ const OTPInput: React.FC<OTPInputProps> = ({
   width,
   height,
 }) => {
+  const [otp, setOTP] = useState<string[]>(Array(size).fill(''));
+  const inputRefs = useRef<HTMLInputElement[]>(new Array(size));
   // Validate the size prop to be a positive integer
   if (!Number.isInteger(size) || size <= 0) {
     console.error('Invalid size for OTPInput. Must be a positive integer.');
     return null;
   }
 
-  const [otp, setOTP] = useState<string[]>(Array(size).fill(''));
-  const inputRefs = useRef<HTMLInputElement[]>(new Array(size));
+
 
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>, index: number) => {
     const value = e.target.value;
@@ -40,9 +41,9 @@ const OTPInput: React.FC<OTPInputProps> = ({
     }
 
     // Check if OTP is complete and trigger onComplete callback
-    if (!newOTP.includes('') && onComplete) {
-      onComplete(newOTP.join(''));
-    }
+   if (!newOTP.includes('') && onComplete && newOTP.length === size) {
+  onComplete(newOTP.join(''));
+}
   };
 
   // Custom styles for the container div
@@ -57,7 +58,9 @@ const OTPInput: React.FC<OTPInputProps> = ({
     width: width || '40px', // Customizable width, with a default value of '40px'
     height: height || '40px', // Customizable height, with a default value of '40px'
     marginRight: '5px', // Customize spacing between inputs
-    border: '1px solid #ccc', // Customize border
+    border: '1px solid #000',// Customize border
+    padding: '10px', 
+    margin:'10px',
     ...inputStyle,
   };
 
@@ -71,7 +74,7 @@ const OTPInput: React.FC<OTPInputProps> = ({
         value={otp[i]}
         onChange={(e) => handleInputChange(e, i)}
         style={inputStyles}
-        ref={(el) => (inputRefs.current[i] = el)}
+         ref={(el) => (inputRefs.current[i] = el!)} 
       />
     );
   }

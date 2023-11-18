@@ -7,8 +7,8 @@ The React OTP Input component is a customizable input field for entering one-tim
 To use this component in your React project, you can install it via npm or yarn:
 
 ```bash
-npm install react-otp-input
-yarn add react-otp-input
+npm install 
+yarn add 
 
 ```
 ## Usage
